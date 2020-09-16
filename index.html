@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body class="bodyIndex">
+    
+      <nav class="navigation indexNav">
+          <a class="navigation__brand" href="index.html">Pong Classic</a>
+          <a class="navigation__link" href="index.html">Home</a>
+          <a class="navigation__link" href="highscore.html">Highscores</a>
+      </nav>
+    <div class="container-fluid main">
+        
+        <div class="main__content">
+            
+            <h1>Welcome to Pong Classic</h1>
+            <p>Pong is the first computer game ever created! There are two paddels and one ball, the objective is to
+                make sure your paddle hits the ball and the opponents paddle misses the ball, this will reward a point.
+            </p>
+            <hr />
+            <h4 class="main__subHeader">Mechanics</h4>
+            <p>The controls are very simple for this game, the <img src="Images/up-arrow.svg" class="controlImage" alt="arrow_up"> arrow key moves your paddle up and the <img src="Images/arrow.svg" class="controlImage" alt="arrow_down"> arrow key moves your paddle down. The difficulty decides the ball speed, hard makes the ball move faster as well as the computer.</p>
+            <hr />
+
+            <h4 class="main__subHeader">Please enter a username</h4>
+            <form id="usernameForm" onsubmit="playGame()">
+                <input type="text" name="username" id="username" placeholder="ex: John" />
+              
+                   <h4 class="main__subHeader">Please select a theme</h4>
+               
+                <div class="main__checkboxes">
+                    <div>
+                        <label>Fotball</label><br />
+                        <input type="radio" id="footballTheme" class="checkbox" onclick="onlyOne(this)" name="theme"
+                            checked>
+                    </div>
+                    <div >
+                        <label>Space</label><br />
+                        <input type="radio" id="spaceTheme" class="checkbox" onclick="onlyOne(this)" name="theme">
+                    </div>
+                </div>
+
+                    <h4 class="main__subHeader">Please select a difficulty</h4>
+
+                <div class="main__checkboxes">
+                    <div >
+                        <label>Easy</label><br />
+                        <input type="radio" id="easyDifficulty" class="checkbox" onclick="onlyOneDifficulty(this)"
+                            name="difficulty" checked>
+                    </div>
+                    <div >
+                        <label>Hard</label><br />
+                        <input type="radio" id="hardDifficulty" class="checkbox" onclick="onlyOneDifficulty(this)"
+                            name="difficulty">
+                    </div>
+                </div>
+
+                <input type="submit" class="button" value="Play Now" />
+            </form>
+
+            <hr />
+            <div class="main__about">
+            <h3>About Pong</h3>
+            <p>Pong is a table tennis-themed arcade video game featuring simple two-dimensional graphics, manufactured by Atari and originally released in 1972. It was one of the earliest arcade video games and created by Allan Alcorn as a training exercise assigned to him by Atari co-founder Nolan Bushnell.</p>
+            <p>Pong was the first commercially successful video game, and it helped to establish the video game industry along with the Magnavox Odyssey. Soon after its release, several companies began producing games that closely mimicked its gameplay. Eventually, Atari's competitors released new types of video games that deviated from Pong's original format to varying degrees, and this, in turn, led Atari to encourage its staff to move beyond Pong and produce more innovative games themselves.</p>
+            <p>Pong can be both addictive and frustrating, here you can see the first ever ragequit in 1969 by someone
+                losing in an early version of pong.</p>
+            <img src="Images/ragequit.gif" alt="ragequit_Gif" />
+        </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

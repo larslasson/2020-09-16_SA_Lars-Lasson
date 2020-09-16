@@ -1,0 +1,33 @@
+.navigation {
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 20px 0;
+    font-size: 20px;
+    
+}
+
+.indexNav a {
+    color: black;
+    margin: 0 10px;
+}
+
+.indexNav .navigation__link:hover{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation__brand:hover{
+    text-decoration: none;
+}
+
+.secondaryNav a{
+    color: white;
+    margin: 0 10px;
+}
+
+.secondaryNav .navigation__link:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+

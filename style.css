@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2 ,h3, h4{
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.bodyIndex {
+    background-image: url('Images/backgroundFootball.jpg'), url('Images/backgroundSpace.jpg');
+    background-position: left top, right top;
+    background-repeat: repeat-y;
+    background-size: 30%;
+
+}
+
+.bodyGame{
+    background-image: url('Images/gamebackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.main__content{
+    width: 40.6%;
+    margin: 0 auto;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.main__content p {
+    width: 70%;
+    margin: 15px auto;
+}
+
+.main__subHeader{
+    margin: 25px 0;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+.controlImage{
+    width: 20px;
+    margin: 0 3px;
+}
+
+.main__checkboxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__checkboxes div{
+   margin: 20px 10px;
+}
+
+.main__content hr {
+    background-color: yellowgreen;
+    height: 2px;
+    margin: 30px 0;
+}
+
+.main__about{
+    margin: 20px 0;
+}
+
+.button {
+    background-color:yellowgreen;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-family:'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+
+.gameinfo{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.gameinfo__content{
+    margin-top: 30px;
+    display: flex;
+}
+
+.gameinfo__content--logout{
+    flex: 1;
+    text-align: right;
+
+}
+
+.gameinfo__content--logout a{
+    color: white;
+    text-decoration: none;
+}
+
+.gameinfo__content--logout a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.gameinfo__name{
+    flex:1; 
+    display:flex;
+    color: white;
+    
+}
+
+.gameinfo__name--static{
+    flex: 1;
+}
+
+.gameinfo__username{
+    margin-left: 5px;
+    flex: 5;
+}
+
+
+.scorelist{
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 0 auto;
+    padding: 35px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+}
+
+.scorelist h1{
+    margin: 20px 0 40px 0;
+    color: yellowgreen;
+    font-size: 60px;
+}
+
+.scorelist__info{
+    margin-bottom: 10px;
+}
+
+
+/*made in js */
+.scorelist__row{ 
+    padding: 15px 0;
+    font-size: 28px;
+    border-bottom: 1px solid yellowgreen;
+    overflow-x: hidden;
+    
+}
+
+.scorelist__scores{
+    max-height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.scorelist__middle {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+.scorelist__right {
+    padding-left: 40px;
+}
+
+.againButton {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.againButton a{
+    background-color:yellowgreen;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-family:'Fredoka One', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+
+
