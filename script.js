@@ -26,19 +26,3 @@ form.addEventListener('submit', function (e) {
 	window.location.href="game.html";
 
 }, false);
-
-
-
-function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('theme')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-}
-
-function onlyOneDifficulty(checkbox) {
-    var checkboxes = document.getElementsByName('difficulty')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-}

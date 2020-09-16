@@ -31,3 +31,11 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+@media only screen and (max-width: 900px) {
+    .navigation {
+        padding: 15px 0;
+        font-size: 17px;
+
+        
+    }
+  }

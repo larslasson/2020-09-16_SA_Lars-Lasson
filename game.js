@@ -142,7 +142,6 @@ function endGame(){
     //Sort table
     highscore = highscore.sort(function(a,b){return b[1] - a[1] ;});
 
-    console.log(highscore);
     localStorage.setItem("highscore", JSON.stringify(highscore));
 }
 
@@ -152,7 +151,6 @@ function moveBall() {
 
     ballX += ballSpeed * ballDirX;
     ballY += ballSpeed * ballDirY;
-
 
 
     if (ballY > gameHeight - ballRadius) {
@@ -234,7 +232,7 @@ function drawGame() {
         drawFotballTheme();
     }
     else{
-        drawSpace();
+        drawSpaceTheme();
         
     }
 
@@ -295,9 +293,6 @@ function drawBall(x, y) {
 
 function drawFotballTheme() {
 
-
-    //TODO: Lag variabler for regnestykkene
-
     //Mid circle
     context.beginPath()
     context.arc(gameWidth / 2, gameHeight / 2, gameHeight*0.15, 0, 2 * (Math.PI), false);
@@ -338,7 +333,7 @@ function drawFotballTheme() {
 
 }
 
-function drawSpace(){
+function drawSpaceTheme(){
       
 
     context.beginPath();

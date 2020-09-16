@@ -4,27 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-
-    <title>Document</title>
+    <title>Pong</title>
 </head>
 
 <body class="bodyGame" onresize="resizeCanvas()">
+
     <nav class="navigation secondaryNav">
         <a class="navigation__brand" href="index.html">Pong Classic</a>
         <a class="navigation__link" href="index.html">Home</a>
         <a class="navigation__link" href="highscore.html">Highscores</a>
     </nav>
-    <div class="gameinfo" >
-        <div>
-            <div class="gameinfo__content" >
 
-                
-                <div class="gameinfo__name" >
+    <div class="gameinfo">
+        <div>
+            <div class="gameinfo__content">
+                <div class="gameinfo__name">
                     <div class="gameinfo__name--static">
                         <b>
                             Username:
@@ -37,14 +35,11 @@
                 <div class="gameinfo__content--logout">
                     <a href="#" onclick="logout()">Quit</a>
                 </div>
-
-                
             </div>
             <div>
-                <canvas id="gameCanvas" >
+                <canvas id="gameCanvas">
                 </canvas>
             </div>
-            
         </div>
     </div>
 

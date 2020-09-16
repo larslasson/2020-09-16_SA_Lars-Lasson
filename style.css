@@ -46,6 +46,11 @@ label{
     margin: 25px 0;
 }
 
+.main__content #username{
+    margin: 20px 0;
+    width: 40%;
+}
+
 .checkbox {
     width: 30px;
     height: 30px;
@@ -77,12 +82,22 @@ label{
 }
 
 .button {
+    border: 2px solid whitesmoke;
     background-color:yellowgreen;
-    border: none;
-    padding: 5px 20px;
+    padding: 15px 35px;
     border-radius: 5px;
     margin: 20px 0;
+    text-decoration: none;
     font-family:'Fredoka One', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.button:hover {
+    border: 2px solid yellowgreen;
+    background-color: whitesmoke;
+    color: yellowgreen;
+    transition: .2s ease-in;
 }
 
 
@@ -186,17 +201,113 @@ label{
     padding: 35px 0;
 }
 
-.againButton a{
-    background-color:yellowgreen;
-    border: none;
-    padding: 15px 35px;
-    border-radius: 5px;
-    margin: 20px 0;
-    text-decoration: none;
-    font-family:'Fredoka One', Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 20px;
+.againButton a:hover{
+  text-decoration: none;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .gameinfo{
+        padding-top:0px;
+    }
+    .bodyIndex {
+        background-image: none;
+    
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .main__content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 10px;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+    
+    .main__content p {
+        width: 90%;
+        margin: 15px auto;
+        text-align: left;
+        font-size: 15px;
+    }
+    
+    .main__subHeader{
+        font-size: 21px;
+    }
+    
+    .main__content #username{
+        width: 70%;
+    }
+
+    .main__about img{
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+    .button {
+        font-size: 18px;
+    }
+
+    .scorelist{
+        text-align: center;
+        width: 90%;
+        margin: 30px auto 0 auto;
+        padding: 15px;
+        border-radius: 5px; 
+    }
+    
+    .scorelist h1{
+        margin: 20px 0 40px 0;
+        color: yellowgreen;
+        font-size: 40px;
+    }
+
+    .scorelist h2{
+        font-size: 20px;
+    }
+    
+    .scorelist__info{
+        margin-bottom: 10px;
+    }
+    
+    .scorelist__row{ 
+        padding: 10px 0;
+        font-size: 18px;
+        border-bottom: 1px solid yellowgreen;
+        overflow-x: hidden;
+    }
+    
+    .scorelist__scores{
+        max-height: 550px;
+       
+    }
+    
+    .scorelist__middle {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+        
+    }
+    
+    .scorelist__right {
+        padding-left: 10px;
+    }
+    
+
+    .bodyGame{
+        background-image: url('Images/gamebackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        padding-bottom: 300px;
+    
+    }
+    
+  }
+
 
 
 
